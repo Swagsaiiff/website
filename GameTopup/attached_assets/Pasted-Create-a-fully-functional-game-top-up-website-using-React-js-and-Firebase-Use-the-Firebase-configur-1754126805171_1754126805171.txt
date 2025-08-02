@@ -1,0 +1,92 @@
+Create a fully functional game top-up website using React.js and Firebase. Use the Firebase configuration below.
+
+🔐 Authentication:
+Use Firebase Authentication with Email/Password and Google Sign-In.
+
+If login is with email tahsan897@gmail.com and password 778899, or Google login of that email, make the user an admin.
+
+All other users are normal users.
+
+🌐 Firebase Config:
+js
+Copy
+Edit
+const firebaseConfig = {
+  apiKey: "AIzaSyCTSDXAnJP4iW1xTwq58ebQ02d6NubZ908",
+  authDomain: "gametopupplus.firebaseapp.com",
+  projectId: "gametopupplus",
+  storageBucket: "gametopupplus.firebaseapp.com",
+  messagingSenderId: "829981614038",
+  appId: "1:829981614038:web"
+};
+🧑‍💻 Admin Panel:
+Only visible to tahsan897@gmail.com.
+
+View, confirm, cancel orders.
+
+View add money requests and confirm them to credit wallet.
+
+Show real-time stats: today’s sales total and order count.
+
+Edit game packages (name, price, logo).
+
+Update admin profile (email, name, password).
+
+👤 User Panel:
+Show wallet balance.
+
+Add money: form with sender number and transaction ID.
+
+Place top-up orders.
+
+View order history with status (Pending, Completed, Cancelled).
+
+Update user profile (name, password, avatar).
+
+🎮 Supported Games:
+Free Fire (Diamonds)
+
+PUBG (UC)
+
+Mobile Legends (Diamonds)
+
+Minecraft (Coins)
+
+Valorant (Points)
+
+Roblox (Robux)
+
+📦 Real Packages:
+Example:
+
+Free Fire: 100 Diamonds = 80 BDT, 210 = 160 BDT
+
+Store real packages in Firebase Firestore.
+
+📁 Firestore Collections:
+users: uid, name, email, wallet, role
+
+orders: userId, game, package, status, time
+
+addMoneyRequests: userId, amount, senderNumber, transactionId, status
+
+games: name, logo, packages[]
+
+✅ Tech Stack:
+React.js frontend
+
+Firebase Auth
+
+Firebase Firestore
+
+Responsive design with Tailwind or CSS
+
+All routing/logic inside a single React app (not multi-page)
+
+⚠️ Bonus: Use React Context or Redux to handle user state and auth status globally.
+
+🧠 Tips:
+After pasting this in Replit AI, you can say:
+“Continue with user profile component”
+“Generate Firebase login logic”
+“Add Firestore query to get user’s order history”
